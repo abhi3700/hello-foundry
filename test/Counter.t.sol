@@ -32,7 +32,8 @@ contract CounterTest is Test {
 
     function testDec() public {
         counter.inc();
+        counter.inc();
         counter.dec();
-        assertEq(counter.get(), 0);
+        assertEq(counter.get(), 1);
     }
 }
